@@ -8,14 +8,14 @@
 :root {
     --color-primary: #191d2b;
     --color-secondary: #ffb900;
-    --color-white: #454e56;
-    --color-black: #000;
-    --color-grey0: #191d2b;
+    --color-white: #f5efef;
+    --color-black: #001;
+    --color-grey0: #f8f8f8;
     --color-grey-1: #6c7983;
     --color-grey-2: #6c7983;
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
-    --color-grey-5: #191d2b;;
+    --color-grey-5: #e5e2e2;
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
@@ -523,6 +523,7 @@ section {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                color: var(--color-white);
                 p {
                     margin: .3rem 0 !important;
                     padding: 0 !important;
@@ -530,6 +531,7 @@ section {
                 .icon {
                     display: grid;
                     grid-template-columns: 40px 1fr;
+                    
                     i {
                         display: flex;
                         align-items: center;
@@ -545,8 +547,8 @@ section {
             a {
                 display: flex;
                 align-items: center;
-                color: var(--color-white);
-                background-color: var(--color-grey-5);
+                color: var(--color-black);
+                background-color: var(--color-white);
                 cursor: pointer;
                 justify-content: center;
                 width: 50px;
@@ -564,6 +566,7 @@ section {
                     justify-content: center;
                     font-size: 1.3rem;
                 }
+                
             }
         }
     }
@@ -581,7 +584,7 @@ section {
                 padding: .8rem 1.1rem;
                 outline: none;
                 border: none;
-                background-color: var(--color-grey-5);
+                background-color: var(--color-grey-6);
                 width: 100%;
                 color: var(--color-white);
                 resize: none;

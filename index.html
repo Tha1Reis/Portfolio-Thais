@@ -497,8 +497,14 @@
                                 <textarea name="mensagem" id="mensagem" cols="15" rows="8" placeholder="Mensagem aqui..."></textarea>
                             </div>
 
-                            <input type="submit" value="Enviar">
+                            <div class="submit-btn" onclick="submitForm()">
+                                <a href="javascript:void(0);"class="main-btn">
+                                    <span class="btn-text" >Enviar e-mail</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
                         </form>
+                        <br>
                         <div class="submit-btn">
                             <a href="https://www.figma.com/proto/ixdgl3nh13Hq4Y2RItJk0h/Curr%C3%ADculo-Thais?type=design&node-id=1-63&t=JwrVHgLC8iRAqOUb-1&scaling=min-zoom&page-id=0%3A1&mode=design" class="main-btn">
                                 <span class="btn-text">Download CV</span>
@@ -552,5 +558,10 @@
         <i class="fas fa-adjust"></i>
     </div>
     <script src="app.js"></script>
+    <script>
+        function submitForm() {
+        document.querySelector('.contact-form').submit();
+        }
+    </script>
 </body>
 </html>
